@@ -1,0 +1,96 @@
+@import '../Components.scss';
+
+header{
+    @extend .d_flex;
+    width:100%;
+    padding:15px 0;
+    .header_container{
+        @extend .d_flex;
+        max-width:1110px;
+        width:90%;
+        flex-direction: column;
+        .headerTop{
+            @extend .d_flex;
+            width:100%;
+            justify-content: space-between;
+            height:80px;
+            .social{
+                &.left{
+                    @extend .d_flex;
+                    width:20%;
+                    justify-content: flex-start;
+                    span{
+                        width:50px;
+                        height:50px;
+                        @extend .d_flex;
+                        cursor:pointer;
+                    }
+                }
+            }
+            .logo{
+                @extend .d_flex;
+                flex:1;
+            }
+            .headerLogin{
+                @extend .d_flex;
+                width:20%;
+                justify-content: flex-end;
+                .userSection{
+                    @extend .d_flex;
+                    justify-content: space-between;
+                    @extend .body_text;
+                    position:relative; 
+                    .userContainer{                       
+                        opacity:0;
+                        visibility: hidden;
+                        position:absolute;
+                        transform:translateY(100px);
+                        left:-100px;
+                        width:250px;
+                        background-color:#f1f1f1;  
+                        transition:all .3s ease-in-out;
+                        padding:15px;   
+                        border-radius: 8px;
+                        .item{
+                            width:100%;
+                            height:50px;
+                            @extend .d_flex;
+                            @extend .body_text;   
+                            background-color:$danger_color; 
+                            border-radius: 8px;
+                            color:$white;
+                            cursor:pointer;
+                            +.item{
+                                margin-top:15px;
+                            } 
+                        }                   
+                    }  
+                    span{
+                        width:50px;
+                        height:50px;
+                        @extend .d_flex;
+                        cursor:pointer;
+                    }  
+                    &:hover{
+                        .userContainer{
+                            opacity:1;
+                            visibility: visible;
+                            transform:translateY(90px);                            
+                        }
+                    }               
+                }
+                .cartSection{
+                    @extend .d_flex;
+                    justify-content: space-between;
+                    span{
+                        width:50px;
+                        height:50px;
+                        @extend .d_flex;
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+

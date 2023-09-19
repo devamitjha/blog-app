@@ -9,10 +9,19 @@ $danger_color:#dc3545;
 $black:#000;
 $white:#fff;
 $accent:#b1b1b3;
+$fashion:#9932cc;
+$food:#008b8b;
+$body_text_color:#8b8787;
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+.line_clamp{
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 //common
 .d_flex{
@@ -52,7 +61,6 @@ $accent:#b1b1b3;
     font-family:$dmSans;
     font-weight:700;
     font-size:25px;
-    letter-spacing: -.75px;
     @media(max-width:768px){
         font-size:18px;
     }

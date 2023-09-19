@@ -1,21 +1,22 @@
 import React from 'react';
 import "./Header.scss";
 import Menu from '../menu/Menu';
+import { Link } from 'react-router-dom';
 
 const HeaderTop = ()=>{
   const user = false;
   return(
     <div className="headerTop">
       <div className="social left">
-        <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
-        <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-        <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-        <span><i class="fa fa-youtube-play" aria-hidden="true"></i></span> 
+        <span><i className="fa fa-facebook" aria-hidden="true"></i></span>
+        <span><i className="fa fa-twitter" aria-hidden="true"></i></span>
+        <span><i className="fa fa-linkedin" aria-hidden="true"></i></span>
+        <span><i className="fa fa-youtube-play" aria-hidden="true"></i></span> 
       </div>
-      <div className="logo">Logo</div>
+      <Link to="/" className="logo">Dev Blog</Link>
       <div className="headerLogin">
        <div className="userSection">
-            <span className="userDetails"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+            <span className="userDetails"><i className="fa fa-user-o" aria-hidden="true"></i></span>
        {user ? (
             <div className="userContainer">
               <div className="item logOut">Logout</div>
@@ -28,9 +29,9 @@ const HeaderTop = ()=>{
           )}
        </div>
        <div className="cartSection">
-        <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-        <span><i class="fa fa-search" aria-hidden="true"></i></span>
-        <span><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+        <span><i className="fa fa-shopping-cart" aria-hidden="true"></i></span>
+        <span><i className="fa fa-search" aria-hidden="true"></i></span>
+        <span><i className="fa fa-heart-o" aria-hidden="true"></i></span>
        </div>
       </div>
     </div>

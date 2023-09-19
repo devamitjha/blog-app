@@ -3,7 +3,7 @@
 header{
     @extend .d_flex;
     width:100%;
-    padding:15px 0;
+    padding:15px 0 0;
     .header_container{
         @extend .d_flex;
         max-width:1110px;
@@ -30,6 +30,11 @@ header{
             .logo{
                 @extend .d_flex;
                 flex:1;
+                text-transform: uppercase;
+                font-size: 22px;
+                font-weight: 600;
+                text-decoration: none;
+                color:$black;
             }
             .headerLogin{
                 @extend .d_flex;

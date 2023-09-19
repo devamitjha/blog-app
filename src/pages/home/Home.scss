@@ -1,0 +1,128 @@
+@import '../../component/Components.scss';
+
+.main_content{
+    max-width: 1110px;
+    width: 90%;
+    @extend .d_flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:80px auto 0 auto;
+    .post_container{
+       width:calc(70% - 15px);
+    }
+    .sidebar_container{
+        width:calc(30% - 15px);
+    }
+}
+.widget-heading{
+    @extend .title_sm;
+    span{
+        position:relative;
+        display:inline-block;
+        padding-left:15px;
+        margin-bottom:20px;
+        &:before{
+            content:"";
+            width:4px;
+            height:100%;
+            background-color:$black;
+            left:0;
+            top:0;
+            position:absolute;
+        }
+        &:after{
+            content:"";
+            width:50px;
+            height:1px;
+            background-color:$black;
+            right:-60px;
+            bottom:5px;
+            position:absolute;
+        }
+    }
+}
+.blog_card_container{
+    @extend .d_flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width:100%;
+    .card{
+        width:calc(50% - 10px);
+        margin-bottom:30px;
+        .card_image{
+            display: block;
+            position: relative;
+            overflow: hidden;
+            margin-bottom:15px;
+            img{
+                display:block;
+                width:100%;
+                transform:scale(1);
+                transition:all .3s ease-in-out;
+            }
+            &:hover{
+                img{
+                    transform:scale(1.2);
+                    cursor: pointer;
+                }
+            }
+            .label{
+                position:absolute;
+                top:0;
+                left:0;
+                &.fashion{
+                    background-color:$fashion;
+                    padding:4px 8px;
+                    color:$white;
+                    @extend .body_text;
+                }
+            }
+        }
+        .card_containent{
+           .card_header{
+            @extend .heading_4;
+            margin-bottom:15px;
+           }
+           .entry_meta{
+                margin-bottom:15px;
+                @extend .d_flex;
+                align-items: center;
+                justify-content: flex-start;
+                .meta_item{
+                    @extend .body_text;
+                    color:$accent;
+                    position:relative;
+                    + .meta_item{
+                        margin-left:20px;
+                    }
+                    &.meta_author,
+                    &.meta_date{
+                        &:after{
+                            content:"";
+                            position:absolute;
+                            right:-12px;
+                            top:50%;
+                            transform:translateY(-50%);
+                            width:5px;
+                            height:5px;
+                            background-color:$accent;
+                            border-radius: 5px;
+                        }
+                    }
+                    &.meta_author{
+                        text-transform: uppercase;
+                    }
+                    &.meta_more{
+                        color:$fashion;
+                    }
+                }
+           }
+           .entry_excerpt{
+                @extend .body_text;
+                color:$body_text_color; 
+                -webkit-line-clamp: 3;               
+           }
+        }
+    }
+}

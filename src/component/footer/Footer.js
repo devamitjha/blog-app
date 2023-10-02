@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero from '../../component/hero/Hero';
 import "./Footer.scss";
 
 const Footer = () => {

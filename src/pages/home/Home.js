@@ -14,7 +14,7 @@ const Home = () => {
           <div className="blog_card_container">
             <div className="card">
                 <div className="card_image">
-                  <img src={process.env.PUBLIC_URL + '/images/hero/1.jpg'} alt="fashion"/>
+                  <img src={process.env.PUBLIC_URL + '/images/posts/1.jpg'} alt="fashion"/>
                   <div className="label fashion">Fashion</div>
                 </div>
                 <div className="card_containent">
@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             <div className="card">
                 <div className="card_image">
-                  <img src={process.env.PUBLIC_URL + '/images/hero/2.jpg'} alt="fashion"/>
+                  <img src={process.env.PUBLIC_URL + '/images/posts/2.jpg'} alt="fashion"/>
                   <div className="label fashion">Fashion</div>
                 </div>
                 <div className="card_containent">
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
             <div className="card">
                 <div className="card_image">
-                  <img src={process.env.PUBLIC_URL + '/images/hero/3.jpg'} alt="fashion"/>
+                  <img src={process.env.PUBLIC_URL + '/images/posts/3.jpg'} alt="fashion"/>
                   <div className="label fashion">Fashion</div>
                 </div>
                 <div className="card_containent">
@@ -65,7 +65,7 @@ const Home = () => {
             </div>
             <div className="card">
                 <div className="card_image">
-                  <img src={process.env.PUBLIC_URL + '/images/hero/4.jpg'} alt="fashion"/>
+                  <img src={process.env.PUBLIC_URL + '/images/posts/4.jpg'} alt="fashion"/>
                   <div className="label fashion">Fashion</div>
                 </div>
                 <div className="card_containent">
@@ -88,11 +88,101 @@ const Home = () => {
             <div className="widget-heading">
               <span>Editor Picks</span>
             </div>
+            <div className="widget-body">
+              <div className="widget-thumb">
+                <img src={process.env.PUBLIC_URL + '/images/01.jpg'} alt="editor picks"/>
+              </div>
+              <div className="widget-small-desc">
+                  <div className="widget-cats">Fashion</div>
+                  <div className="widget-title">Style Tips Every Woman Should Know</div>
+              </div>
+            </div>
+            <div className="widget-body">
+              <div className="widget-thumb">
+                <img src={process.env.PUBLIC_URL + '/images/02.jpg'} alt="editor picks"/>
+              </div>
+              <div className="widget-small-desc">
+                  <div className="widget-cats">Fashion</div>
+                  <div className="widget-title">Style Tips Every Woman Should Know</div>
+              </div>
+            </div>
+            <div className="widget-body">
+              <div className="widget-thumb">
+                <img src={process.env.PUBLIC_URL + '/images/03.jpg'} alt="editor picks"/>
+              </div>
+              <div className="widget-small-desc">
+                  <div className="widget-cats">Fashion</div>
+                  <div className="widget-title">Style Tips Every Woman Should Know</div>
+              </div>
+            </div>
+            <div className="widget-body">
+              <div className="widget-thumb">
+                <img src={process.env.PUBLIC_URL + '/images/04.jpg'} alt="editor picks"/>
+              </div>
+              <div className="widget-small-desc">
+                  <div className="widget-cats">Fashion</div>
+                  <div className="widget-title">Style Tips Every Woman Should Know</div>
+              </div>
+            </div>
           </div>
 
           <div className="widget_container">
             <div className="widget-heading">
               <span>Join Us</span>
+            </div>
+            <div className="widget-body">
+              <div className="widget-social">
+                <div className="icon-container">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  <p>Youtube 20K</p>
+                </div>                
+                <div className="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <div className="widget-body">
+              <div className="widget-social">
+                <div className="icon-container">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <p>Facebook 20K</p>
+                </div>                
+                <div className="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <div className="widget-body">
+              <div className="widget-social">
+                <div className="icon-container">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <p>Twitter 20K</p>
+                </div>                
+                <div className="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <div className="widget-body">
+              <div className="widget-social">
+                <div className="icon-container">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  <p>Linkedin 20K</p>
+                </div>                
+                <div className="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <div className="widget-body">
+              <div className="widget-social">
+                <div className="icon-container">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <p>Instagram 20K</p>
+                </div>                
+                <div className="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <div className="widget-body">
+              <div className="widget-social">
+                <div className="icon-container">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  <p>Github 20K</p>
+                </div>                
+                <div className="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+              </div>
             </div>
           </div>
 

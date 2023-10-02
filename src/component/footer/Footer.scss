@@ -1,0 +1,30 @@
+@import '../../component/Components.scss';
+
+footer{
+    background-color:rgba($fashion, .3);
+    .content{
+        @extend .d_flex;
+        max-width:1110px;
+        margin:auto;
+        justify-content: space-between;
+        text-align: center;
+        height:50px;
+        .copyright{
+            font-size:12px;
+        }
+        .social{
+            @extend .d_flex;
+            justify-content: flex-end;
+            .fa{
+                cursor:pointer;
+                font-size:14px;
+                width:40px;
+                height:40px;
+                @extend .d_flex;
+                +.fa{
+                    margin-left:5px;
+                }
+            }
+        }
+    }
+}

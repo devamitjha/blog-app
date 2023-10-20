@@ -1,0 +1,18 @@
+@import "../Components.scss";
+.loadmore{
+    @extend .d_flex;
+    @extend .body_text;
+    width:100%;
+    height:46px;
+    background-color:$btn_grey;
+    color:$black;
+    border-radius: 46px;
+    cursor:pointer;
+    margin-bottom:30px;
+    span{
+        display:none;
+        &.active{
+            display:block;
+        }
+    }
+}

@@ -44,10 +44,10 @@ const Hero = () => {
                 <img src={process.env.PUBLIC_URL + '/images/hero/1.jpg'} alt="fashion"/>
                 <div className="item_content">
                   <div className="label fashion">
-                    <Link to="/">Fashion</Link>
+                    <Link to="/category/fashion">Fashion</Link>
                   </div>
                   <div className="title">
-                    <Link to="/">How Lovely Yellow is! It Stands for the Sun</Link>
+                    <Link to="/post/1">How Lovely Yellow is! It Stands for the Sun</Link>
                   </div>
                   <div className="dateTime">September 20, 2023</div>
                 </div>
@@ -58,10 +58,10 @@ const Hero = () => {
                 <img src={process.env.PUBLIC_URL + '/images/hero/2.jpg'} alt="fashion"/>
                 <div className="item_content">
                   <div className="label fashion">
-                    <Link to="/">Fashion</Link>
+                    <Link to="/category/fashion">Fashion</Link>
                   </div>
                   <div className="title">
-                    <Link to="/">The Trend of Women’s Clothing</Link>
+                    <Link to="/post/1">The Trend of Women's Clothing</Link>
                   </div>
                   <div className="dateTime">September 20, 2023</div>
                 </div>
@@ -72,10 +72,10 @@ const Hero = () => {
                 <img src={process.env.PUBLIC_URL + '/images/hero/3.jpg'} alt="fashion"/>
                 <div className="item_content">
                   <div className="label fashion">
-                    <Link to="/">Fashion</Link>
+                    <Link to="/category/fashion">Fashion</Link>
                   </div>
                   <div className="title">
-                    <Link to="/">Summer Men’s Fashion Trends</Link>
+                    <Link to="/post/1">Summer Men's Fashion Trends</Link>
                   </div>
                   <div className="dateTime">September 20, 2023</div>
                 </div>
@@ -86,10 +86,10 @@ const Hero = () => {
                 <img src={process.env.PUBLIC_URL + '/images/hero/4.jpg'} alt="fashion"/>
                 <div className="item_content">
                   <div className="label fashion">
-                    <Link to="/">Fashion</Link>
+                    <Link to="/category/fashion">Fashion</Link>
                   </div>
                   <div className="title">
-                    <Link to="/">Style Tips Every Woman Should Know</Link>
+                    <Link to="/post/1">Style Tips Every Woman Should Know</Link>
                   </div>
                   <div className="dateTime">September 20, 2023</div>
                 </div>
@@ -100,10 +100,10 @@ const Hero = () => {
                 <img src={process.env.PUBLIC_URL + '/images/hero/5.jpg'} alt="fashion"/>
                 <div className="item_content">
                   <div className="label fashion">
-                    <Link to="/">Fashion</Link>
+                    <Link to="/category/fashion">Fashion</Link>
                   </div>
                   <div className="title">
-                    <Link to="/">How Lovely Yellow is! It Stands for the Sun</Link>
+                    <Link to="/post/1">How Lovely Yellow is! It Stands for the Sun</Link>
                   </div>
                   <div className="dateTime">September 20, 2023</div>
                 </div>
@@ -114,10 +114,10 @@ const Hero = () => {
                 <img src={process.env.PUBLIC_URL + '/images/hero/6.jpg'} alt="fashion"/>
                 <div className="item_content">
                   <div className="label fashion">
-                    <Link to="/">Fashion</Link>
+                    <Link to="/category/fashion">Fashion</Link>
                   </div>
                   <div className="title">
-                    <Link to="/">Style Tips Every Woman Should Know</Link>
+                    <Link to="/post/1">Style Tips Every Woman Should Know</Link>
                   </div>
                   <div className="dateTime">September 20, 2023</div>
                 </div>
@@ -128,10 +128,10 @@ const Hero = () => {
                 <img src={process.env.PUBLIC_URL + '/images/hero/7.jpg'} alt="fashion"/>
                 <div className="item_content">
                   <div className="label fashion">
-                    <Link to="/">Fashion</Link>
+                    <Link to="/category/fashion">Fashion</Link>
                   </div>
                   <div className="title">
-                    <Link to="/">How Lovely Yellow is! It Stands for the Sun</Link>
+                    <Link to="/post/1">How Lovely Yellow is! It Stands for the Sun</Link>
                   </div>
                   <div className="dateTime">September 20, 2023</div>
                 </div>
@@ -142,10 +142,10 @@ const Hero = () => {
                 <img src={process.env.PUBLIC_URL + '/images/hero/8.jpg'} alt="fashion"/>
                 <div className="item_content">
                   <div className="label fashion">
-                    <Link to="/">Fashion</Link>
+                    <Link to="/category/fashion">Fashion</Link>
                   </div>
                   <div className="title">
-                    <Link to="/">Style Tips Every Woman Should Know</Link>
+                    <Link to="/post/1">Style Tips Every Woman Should Know</Link>
                   </div>
                   <div className="dateTime">September 20, 2023</div>
                 </div>

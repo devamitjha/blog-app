@@ -29,6 +29,7 @@
                 position:absolute;
                 top:0;
                 left:0;
+                text-decoration: none;
                 &.fashion{
                     background-color:$fashion;
                     padding:4px 8px;
@@ -38,9 +39,13 @@
             }
         }
         .card_containent{
+            a{
+                text-decoration: none;
+            }
            .card_header{
             @extend .heading_4;
-            margin-bottom:15px;
+            margin-bottom:15px;  
+            color:$black;          
            }
            .entry_meta{
                 margin-bottom:15px;
@@ -73,6 +78,7 @@
                     }
                     &.meta_more{
                         color:$fashion;
+                        text-decoration: none;
                     }
                 }
            }

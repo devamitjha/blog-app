@@ -27,8 +27,8 @@
             position:absolute;
         }
     }    
-    span{
-        text-decoration: underline;
+    a{
+        text-decoration: none;
         font-size: 10px;
         color:$body_text_color;
     }
@@ -40,11 +40,16 @@
         width:85px;
         height:85px;
         margin-right:15px;
+        overflow: hidden;        
         img{
             display:block;
             width:100%;
             height:100%;
             object-fit:cover;
+            transition: all .3s ease-in-out;
+            &:hover{
+                transform:scale(1.1);
+            }
         }        
     }
     +.widget-body{
@@ -57,11 +62,16 @@
             color:$fashion;
             @extend .label; 
             margin-bottom:10px;
+            text-decoration: none;
+            display:inline-block;
         }
         .widget-title{            
             font-family: $popins;
             font-size:14px;
             font-weight: 600;
+            display:block;
+            text-decoration: none;
+            color:$black;
         }
         .widget-disc{
             font-family: $popins;
@@ -135,6 +145,7 @@
                 background-color:$fashion;
                 @extend .label;
                 color:$white;
+                text-decoration: none;
             }
         }        
     }

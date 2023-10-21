@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Sidebar.scss";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -7,42 +8,42 @@ const Sidebar = () => {
         <div className="widget_container">
           <div className="widget-heading">
             <h4>Editor Picks</h4>
-            <span>View All</span>
+            <Link to="/category/fashion">View All</Link>
           </div>
           <div className="widget-body">
             <div className="widget-thumb">
-              <img src={process.env.PUBLIC_URL + '/images/01.jpg'} alt="editor picks"/>
+              <Link to="post/1"><img src={process.env.PUBLIC_URL + '/images/01.jpg'} alt="editor picks"/></Link>
             </div>
             <div className="widget-small-desc">
-                <div className="widget-cats">Fashion</div>
-                <div className="widget-title">Style Tips Every Woman Should Know</div>
-            </div>
-          </div>
-          <div className="widget-body">
-            <div className="widget-thumb">
-              <img src={process.env.PUBLIC_URL + '/images/02.jpg'} alt="editor picks"/>
-            </div>
-            <div className="widget-small-desc">
-                <div className="widget-cats">Fashion</div>
-                <div className="widget-title">Style Tips Every Woman Should Know</div>
+                <Link to="/category/fashion" className="widget-cats">Fashion</Link>
+                <Link to="/post/1" className="widget-title">Style Tips Every Woman Should Know</Link>
             </div>
           </div>
           <div className="widget-body">
             <div className="widget-thumb">
-              <img src={process.env.PUBLIC_URL + '/images/03.jpg'} alt="editor picks"/>
+              <Link to="post/1"><img src={process.env.PUBLIC_URL + '/images/02.jpg'} alt="editor picks"/></Link>
             </div>
             <div className="widget-small-desc">
-                <div className="widget-cats">Fashion</div>
-                <div className="widget-title">Style Tips Every Woman Should Know</div>
+                <Link to="/category/fashion" className="widget-cats">Fashion</Link>
+                <Link to="/post/1" className="widget-title">Style Tips Every Woman Should Know</Link>
             </div>
           </div>
           <div className="widget-body">
             <div className="widget-thumb">
-              <img src={process.env.PUBLIC_URL + '/images/04.jpg'} alt="editor picks"/>
+              <Link to="post/1"><img src={process.env.PUBLIC_URL + '/images/03.jpg'} alt="editor picks"/></Link>
             </div>
             <div className="widget-small-desc">
-                <div className="widget-cats">Fashion</div>
-                <div className="widget-title">Style Tips Every Woman Should Know</div>
+                <Link to="/category/fashion" className="widget-cats">Fashion</Link>
+                <Link to="/post/1" className="widget-title">Style Tips Every Woman Should Know</Link>
+            </div>
+          </div>
+          <div className="widget-body">
+            <div className="widget-thumb">
+              <Link to="post/1"><img src={process.env.PUBLIC_URL + '/images/04.jpg'} alt="editor picks"/></Link>
+            </div>
+            <div className="widget-small-desc">
+                <Link to="/category/fashion" className="widget-cats">Fashion</Link>
+                <Link to="/post/1" className="widget-title">Style Tips Every Woman Should Know</Link>
             </div>
           </div>
         </div>
@@ -108,15 +109,15 @@ const Sidebar = () => {
         <div className="widget_container">
           <div className="widget-heading">
             <h4>Recent</h4>
-            <span>View All</span>
+            <Link to="/category/fashion">View All</Link>
           </div>
           <div className="widget-body big">
             <div className="widget-thumb">
-              <img src={process.env.PUBLIC_URL + '/images/01.jpg'} alt="editor picks"/>
-              <div className="widget-cats">Fashion</div>
+              <Link to="post/1"><img src={process.env.PUBLIC_URL + '/images/01.jpg'} alt="editor picks"/></Link>
+               <Link to="/category/fashion" className="widget-cats">Fashion</Link>
             </div>
             <div className="widget-small-desc">               
-                <div className="widget-title">Style Tips Every Woman Should Know</div>
+                <Link to="/post/1" className="widget-title">Style Tips Every Woman Should Know</Link>
             </div>
             <div className="meta-date">3 years ago</div>
           </div>

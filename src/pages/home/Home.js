@@ -12,7 +12,7 @@ const Home = () => {
       <div className="main_content">
         <div className="post_container">
           <div className="widget-heading">
-            <span>Latest Posts</span>
+            <h4>Latest Posts</h4>
           </div>          
           <Card/>
           <Loadmore/>

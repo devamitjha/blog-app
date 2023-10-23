@@ -23,8 +23,8 @@ const HeaderTop = ()=>{
             </div>
           ) : (
             <div className="userContainer">
-              <div className="item login">Login</div>
-              <div className="item Register">Register</div>
+              <Link to="user/login" className="item login">Login</Link>
+              <Link to="user/register" className="item Register">Register</Link>
             </div>
           )}
        </div>

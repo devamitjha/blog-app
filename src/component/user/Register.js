@@ -2,7 +2,8 @@ import React from 'react';
 import "./LoginRegister.scss"
 
 const Register = () => {
-    const newLocal = <section className="signup">
+  return (
+    <section className="signup">
         <div className="container">
             <div className="signup-content">
                 <div className="signup-form">
@@ -10,25 +11,25 @@ const Register = () => {
                     <form method="POST" className="register-form" id="register-form">
                         <div className="form-group">
                             <label for="name">
-                                <i className="zmdi zmdi-account material-icons-name"></i>
+                                <i class="fa fa-user" aria-hidden="true"></i>
                             </label>
                             <input type="text" name="name" id="name" placeholder="Your Name"/>
                         </div>
                         <div className="form-group">
                             <label for="email">
-                                <i className="zmdi zmdi-email"></i>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
                             </label>
                             <input type="email" name="email" id="email" placeholder="Your Email"/>
                         </div>
                         <div className="form-group">
                             <label for="pass">
-                                <i className="zmdi zmdi-lock"></i>
+                                <i class="fa fa-lock" aria-hidden="true"></i>
                             </label>
                             <input type="password" name="pass" id="pass" placeholder="Password"/>
                         </div>
                         <div className="form-group">
                             <label for="re-pass">
-                                <i className="zmdi zmdi-lock-outline"></i>
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                             </label>
                             <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
                         </div>
@@ -50,9 +51,7 @@ const Register = () => {
                 </div>
             </div>
         </div>
-    </section>;
-  return (
-    newLocal
+    </section>
   )
 }
 

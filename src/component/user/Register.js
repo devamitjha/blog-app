@@ -1,5 +1,6 @@
 import React from 'react';
 import "./LoginRegister.scss"
+import {Link} from 'react-router-dom'
 
 const Register = () => {
   return (
@@ -37,7 +38,7 @@ const Register = () => {
                             <input type="checkbox" name="agree-term" id="agree-term" className="agree-term"/>
                             <label for="agree-term" className="label-agree-term">
                                 <span><span></span></span>I agree all statements in 
-                                <a href="#" className="term-service">Terms of service</a>
+                                <Link to="/" className="term-service">Terms of service</Link>
                             </label>
                         </div>
                         <div className="form-group form-button">
@@ -47,7 +48,7 @@ const Register = () => {
                 </div>
                 <div className="signup-image">                
                     <figure><img src={process.env.PUBLIC_URL + '/images/signup-image.jpg'} alt="signup"/></figure>
-                    <a href="#" className="signup-image-link">I am already member</a>
+                    <Link to="/user/login" className="signup-image-link">I am already member</Link>
                 </div>
             </div>
         </div>

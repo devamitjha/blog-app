@@ -101,4 +101,63 @@ $btn_grey:#efefef;
 }
 
 
+.custome-checkbox {
+    @extend .d_flex;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 25px;
+    .checkbox-wrapper{
+        width:13px;
+        height:13px;
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }  
+        .checkmark{
+            &:after {
+                left:50%;
+                top:50%;
+                width: 2px;
+                height: 4px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                transform: translate(-50%,-50%) rotate(45deg);
+              }
+        }
+    } 
+    .term-service{
+        @extend .label;
+        margin-left:8px;
+    }   
+  }  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:13px;
+    height:13px;
+    background-color: #eee;
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+  }  
+  .custome-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .custome-checkbox input:checked ~ .checkmark {
+    background-color: $fashion;
+  } 
+  .custome-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+
+
 

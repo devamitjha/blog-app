@@ -11,36 +11,36 @@ const Register = () => {
                     <h2 className="form-title">Sign up</h2>
                     <form method="POST" className="register-form" id="register-form">
                         <div className="form-group">
-                            <label for="name">
+                            <label className="label" for="name">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </label>
-                            <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            <input className="custome-input" type="text" name="name" id="name" placeholder="Your Name"/>
                         </div>
                         <div className="form-group">
-                            <label for="email">
+                            <label className="label" for="email">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </label>
-                            <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            <input className="custome-input" type="email" name="email" id="email" placeholder="Your Email"/>
                         </div>
                         <div className="form-group">
-                            <label for="pass">
+                            <label className="label" for="pass">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
                             </label>
-                            <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            <input className="custome-input" type="password" name="pass" id="pass" placeholder="Password"/>
                         </div>
                         <div className="form-group">
-                            <label for="re-pass">
+                            <label className="label" for="re-pass">
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                             </label>
-                            <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                            <input className="custome-input" type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
                         </div>
-                        <div className="form-group">
-                            <input type="checkbox" name="agree-term" id="agree-term" className="agree-term"/>
-                            <label for="agree-term" className="label-agree-term">
-                                <span><span></span></span>I agree all statements in 
-                                <Link to="/" className="term-service">Terms of service</Link>
-                            </label>
-                        </div>
+                        <label class="custome-checkbox">
+                            <div className="checkbox-wrapper">
+                                <input type="checkbox"/>
+                                <span class="checkmark"></span>
+                            </div>
+                            <div className="term-service">I agree all statements in Terms of service</div>
+                        </label>
                         <div className="form-group form-button">
                             <input type="submit" name="signup" id="signup" className="form-submit" value="Register"/>
                         </div>
